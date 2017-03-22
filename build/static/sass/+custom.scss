@@ -14,9 +14,118 @@ body {
   background-color: #212225;
 }
 
+.no--scroll {
+  overflow: hidden;
+  padding-right: 15px;
+}
+
+
 .shareComments {
   margin: 3.6rem 0 4.8rem;
   ul {
     text-align: left;
+  }
+}
+
+#health-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: darken(rgba(#212225, .98), 10);
+  width: 100%;
+  height: 100vh;
+  z-index: 20;
+}
+
+.overlay__container {
+  width: 30%;
+  max-width: 600px;
+  margin: 0 auto;
+  display: table;
+  height: 100%;
+  @include transition(all, 1s, ease-out);
+  opacity: 1;
+  position: relative;
+  top: 0;
+}
+
+.overlay__content {
+  display: table-cell;
+  vertical-align: middle;
+  color: white;
+  position: relative;
+  top: -20px;
+  img {
+    width: 100%;
+    margin-bottom: 1.2rem;
+  }
+  blockquote {
+    font-family: "Cormorant Garamond", Georgia, serif;
+    @include type(2rem, 3rem, 0);
+    font-style: italic;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 2.4rem;
+  }
+  p {
+    font-family: $sans;
+    text-align: center;
+    text-transform: uppercase;
+    @include type(1.4rem, 1.4rem, 0);
+  }
+}
+
+.init--display {
+  opacity: 0;
+  top: 500px;
+}
+
+// @supports (display: grid) {
+//   #content-header {
+//     display: grid;
+//     grid-gap: 3%;
+//     grid-template-columns: 650px 1fr;
+//   }
+// }
+//
+// @supports not (display: grid) {
+//   .ch__image-block {
+//     width: 650px;
+//     float: left;
+//   }
+//   .ch__side-block {
+//     width: calc(97% - 650px);
+//     float: right;
+//   }
+// }
+
+.individual-well {
+  padding-top: 40px;
+}
+
+#content-header img {
+  margin-bottom: 0;
+}
+.ch__side-block {
+  padding-top: 2.4rem;
+  color: white;
+  font-family: $sans;
+  background-color: darken(#212225, 2%);
+  padding: 20px;
+  position: relative;
+  top: -2px;
+  h4, h6 {
+    font-weight: bold;
+  }
+  h4 {
+    padding-bottom: .3rem;
+    border-bottom: 1px solid white;
+    margin-bottom: .9rem;
+  }
+  p {
+    @include type(1.4rem, 1.8rem, .9rem);
+    &:last-of-type {
+      margin-bottom: 0;
+    }
   }
 }

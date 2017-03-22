@@ -3,9 +3,9 @@
 <head prefix='og: http://ogp.me/ns#'>
 
 	<!-- Add Custom Meta Data -->
-	{%block custom_meta%}
+	
 
-	{%endblock%}
+	
 	<!-- End Custom Meta Data -->
 
 	<meta property="fb:app_id" content="258290334265148"/>
@@ -16,7 +16,7 @@
 	<link rel="stylesheet" type="text/css" href="//interactives.dallasnews.com/common/templates/v1.1/css/share.css"/>
 	<link rel="stylesheet" type="text/css" href="//interactives.dallasnews.com/common/templates/v1.0/css/print.css" media="print"/>
 	<link rel="stylesheet" type="text/css" href="//cloud.typography.com/6922714/7642152/css/fonts.css" />
-	<link href='//fonts.googleapis.com/css?family=PT+Serif:400,400italic,700,700italic|Cormorant+Garamond:300i' rel='stylesheet' type='text/css'>
+	<link href='//fonts.googleapis.com/css?family=PT+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 
 	<link rel="stylesheet" type="text/css" href="css/styles-bundle.css" />
 
@@ -27,8 +27,8 @@
 	</script>
 
 
-	{%block custom_head%}
-	{%endblock%}
+	
+	
 
 
 
@@ -37,9 +37,9 @@
 	START AD CODE
 	================================
 	-->
-	{%block ad%}
+	
 
-	{%endblock%}
+	
 	<!--
 	================================
 	END AD CODE
@@ -47,7 +47,7 @@
 	-->
 
 </head>
-<body>
+<body class="no--scroll">
 
 	<!-- Google Tag Manager DMN -->
 	<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-T45ZQL" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -90,7 +90,7 @@
 
 	<article id="content">
 
-	{%block content%}
+	
 
 		<section id="content-header">
 			<img src="images/_defaultImage.jpg" alt="FILL THIS IN">
@@ -123,7 +123,16 @@
 
 		    <p>column-inch trolls copyboy data visualization AOL afternoon paper shoot a photo attracting young readers, MinnPost but what's the business model Instagram fair use fourth estate morgue writing, The Work of Art in the Age of Mechanical Reproduction audience atomization overcome free as in beer Pictures of Goats section kitchen table of the future masthead.</p>
 
-		    {%include "adblock1.html" %}
+		    </section>
+
+    <div id="dfpAdPositionTop" class="ad"> <!-- to remove bottom and top rules, add class "noRule" -->
+        <p class="adLabel">Advertisement</p>
+        <script type="text/javascript">googletag.display('dfpAdPositionTop');</script>
+    </div>
+    <!-- end adBlock -->
+
+<section class="content-well">
+
 
 		    <!--
 		      use the above include with adblock2.html and adblock3.html to place adblocks 2 and 3, then delete this comment.
@@ -176,7 +185,7 @@
 		</section>
 		<!-- end contentWell -->
 
-	{%endblock%}
+	
 
 	</article>
 
@@ -209,24 +218,24 @@
 
 	<script type="text/javascript" src="js/scripts-bundle.js"></script>
 
-	{%block custom_foot%}
-	{%endblock%}
+	
+	
 
 
 
-	{%block custom_social_meta%}
+	
 	<script type="text/javascript">
-	var storyTitle = "{{tweetText}}",
-		storyURL = "{{url}}",
-		leadText = "{{shareText}}",
-		storyIMG = "{{imgURL}}",
-		storyAuthor = "{{authors}}",
-		twitterTag = "{{sectionTwitter}}",
+	var storyTitle = "&lt;Text&gt;",
+		storyURL = "http://interactives.dallasnews.com/2017/healthcare-crossroads/",
+		leadText = "&lt;Text&gt;",
+		storyIMG = "http://interactives.dallasnews.com/2017/healthcare-crossroads/undefined",
+		storyAuthor = "&lt;Authors - comma-separated, capitalize first letter of names. NOTE: If more than one author, you will need to manually edit the author key in the parsely json object. Author names should be comma separated strings within an array in the parsely json object.&gt;",
+		twitterTag = "&lt;handle - w/out &quot;@&quot;&gt;",
 		comments = true,
 		share = true;
-		OAS_sitepage = 'www.dallasnews.com/{{desk}}/{{section}}/';
+		OAS_sitepage = 'www.dallasnews.com/&lt;Desk&gt;/&lt;Section&gt;/';
 	</script>
-	{%endblock%}
+	
 
 	<script type="text/javascript" src="//interactives.dallasnews.com/common/templates/v1.0/js/commonInteractives.js"></script>
 	<script type="text/javascript" src="https://sres.dallasnews.com/resrsc/js/biomniture.js"></script>

@@ -180,8 +180,9 @@ IV. CONTENT HEADER
 */
 #content-header {
   position: relative;
-  max-width: 650px;
-  margin: 4.8rem 0 0 5%; }
+  width: 40%;
+  float: right;
+  margin: 4.8rem auto 0; }
 
 #content-header img {
   width: 100%;
@@ -204,7 +205,7 @@ V. CONTENT WELL
   width: 90%; }
 
 .content-well > p {
-  max-width: 650px;
+  max-width: 55%;
   font-size: 1.7rem;
   line-height: 2.4rem;
   font-family: "PT Serif", Georgia, Times, serif;
@@ -229,7 +230,7 @@ VI. STORY HEAD, BYLINES AND INTRO
 #story-head {
   margin: 4.8rem 0 2.4rem 0;
   color: white;
-  max-width: 650px; }
+  max-width: 55%; }
 
 #story-head h1 {
   color: white;
@@ -251,7 +252,7 @@ VI. STORY HEAD, BYLINES AND INTRO
   text-transform: uppercase; }
 
 .byline-block {
-  max-width: 650px; }
+  max-width: 55%; }
 
 .byline-block p {
   color: white;
@@ -816,7 +817,8 @@ XIX. ADS
   padding: 3.6rem 0;
   position: relative;
   text-align: center;
-  z-index: 0; }
+  z-index: 0;
+  color: white; }
 
 .no-rule {
   border-bottom: none !important;
@@ -839,10 +841,94 @@ XIX. ADS
 body {
   background-color: #212225; }
 
+.no--scroll {
+  overflow: hidden;
+  padding-right: 15px; }
+
 .shareComments {
   margin: 3.6rem 0 4.8rem; }
   .shareComments ul {
     text-align: left; }
+
+#health-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(9, 9, 10, 0.98);
+  width: 100%;
+  height: 100vh;
+  z-index: 20; }
+
+.overlay__container {
+  width: 30%;
+  max-width: 600px;
+  margin: 0 auto;
+  display: table;
+  height: 100%;
+  -webkit-transtion: all 1s ease-out;
+  -moz-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+  opacity: 1;
+  position: relative;
+  top: 0; }
+
+.overlay__content {
+  display: table-cell;
+  vertical-align: middle;
+  color: white;
+  position: relative;
+  top: -20px; }
+  .overlay__content img {
+    width: 100%;
+    margin-bottom: 1.2rem; }
+  .overlay__content blockquote {
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-bottom: 0;
+    font-style: italic;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 2.4rem; }
+  .overlay__content p {
+    font-family: "Gotham A", "Gotham B", Arial, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    margin-bottom: 0; }
+
+.init--display {
+  opacity: 0;
+  top: 500px; }
+
+.individual-well {
+  padding-top: 40px; }
+
+#content-header img {
+  margin-bottom: 0; }
+
+.ch__side-block {
+  padding-top: 2.4rem;
+  color: white;
+  font-family: "Gotham A", "Gotham B", Arial, sans-serif;
+  background-color: #1c1d20;
+  padding: 20px;
+  position: relative;
+  top: -2px; }
+  .ch__side-block h4, .ch__side-block h6 {
+    font-weight: bold; }
+  .ch__side-block h4 {
+    padding-bottom: .3rem;
+    border-bottom: 1px solid white;
+    margin-bottom: .9rem; }
+  .ch__side-block p {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    margin-bottom: 0.9rem; }
+    .ch__side-block p:last-of-type {
+      margin-bottom: 0; }
 
 .interactive-footer {
   min-height: 97px;

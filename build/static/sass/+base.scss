@@ -187,8 +187,9 @@ IV. CONTENT HEADER
 
 #content-header {
   position: relative;
-  max-width: 650px;
-  margin: 4.8rem 0 0 5%;
+  width: 40%;
+  float: right;
+  margin: 4.8rem auto 0;
 }
 #content-header img {
   width: 100%;
@@ -213,7 +214,7 @@ V. CONTENT WELL
   width: 90%;
 }
 .content-well > p {
-  max-width: 650px;
+  max-width: 55%;
   font-size: 1.7rem;
   line-height: 2.4rem;
   font-family: "PT Serif", Georgia, Times, serif;
@@ -243,7 +244,7 @@ VI. STORY HEAD, BYLINES AND INTRO
 #story-head {
   margin: 4.8rem 0 2.4rem 0;
   color: white;
-  max-width: 650px;
+  max-width: 55%;
 }
 #story-head h1 {
   color: white;
@@ -265,7 +266,7 @@ VI. STORY HEAD, BYLINES AND INTRO
   text-transform: uppercase;
 }
 .byline-block {
-  max-width: 650px;
+  max-width: 55%;
 }
 .byline-block p {
   color: white;
@@ -901,7 +902,9 @@ XIX. ADS
   padding: 3.6rem 0;
   position: relative;
   text-align: center;
-  z-index: 0; }
+  z-index: 0;
+  color: white;
+}
 
 .no-rule {
   border-bottom: none !important;
