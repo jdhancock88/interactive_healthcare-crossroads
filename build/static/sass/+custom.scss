@@ -10,6 +10,8 @@
 @import 'variables';
 @import 'mixins';
 
+$custom: #cc3917;
+
 body {
   background-color: #212225;
 }
@@ -126,6 +128,47 @@ body {
     @include type(1.4rem, 1.8rem, .9rem);
     &:last-of-type {
       margin-bottom: 0;
+    }
+  }
+}
+
+#hc-nav {
+  width: 55%;
+  float: left;
+  position: relative;
+  top: 45px;
+  font-family: $sans;
+  ul {
+    max-width: 400px;
+    li {
+      display: inline-block;
+      float: left;
+      margin-right: 25px;
+      @include type(1.2rem, 1.8rem, 0);
+      a {
+        font-weight: normal;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+#related-stream {
+  width: 55%;
+  color: white;
+  font-family: $sans;
+  padding-top: 2.4rem;
+  border-top: 1px solid white;
+  p {
+    @include type(1.4rem, 2.4rem, 1.2rem);
+  }
+  a {
+    font-weight: normal;
+    color: white;
+    display: inline;
+    border-bottom: 1px solid $dmnblue;
+    &:hover {
+      text-decoration: none;
     }
   }
 }

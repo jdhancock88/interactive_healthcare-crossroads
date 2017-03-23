@@ -89,3 +89,40 @@ body {
     margin-bottom: 0.9rem; }
     .ch__side-block p:last-of-type {
       margin-bottom: 0; }
+
+#hc-nav {
+  width: 55%;
+  float: left;
+  position: relative;
+  top: 45px;
+  font-family: "Gotham A", "Gotham B", Arial, sans-serif; }
+  #hc-nav ul {
+    max-width: 400px; }
+    #hc-nav ul li {
+      display: inline-block;
+      float: left;
+      margin-right: 25px;
+      font-size: 1.2rem;
+      line-height: 1.8rem;
+      margin-bottom: 0; }
+      #hc-nav ul li a {
+        font-weight: normal;
+        text-transform: uppercase; }
+
+#related-stream {
+  width: 55%;
+  color: white;
+  font-family: "Gotham A", "Gotham B", Arial, sans-serif;
+  padding-top: 2.4rem;
+  border-top: 1px solid white; }
+  #related-stream p {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    margin-bottom: 1.2rem; }
+  #related-stream a {
+    font-weight: normal;
+    color: white;
+    display: inline;
+    border-bottom: 1px solid #0185d3; }
+    #related-stream a:hover {
+      text-decoration: none; }
