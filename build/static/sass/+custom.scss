@@ -11,9 +11,10 @@
 @import 'mixins';
 
 $custom: #cc3917;
+$bg: #212225;
 
 body {
-  background-color: #212225;
+  background-color: $bg;
 }
 
 .no--scroll {
@@ -21,8 +22,33 @@ body {
   padding-right: 15px;
 }
 
+#hc-nav {
+  width: 55%;
+  float: left;
+  position: relative;
+  top: 45px;
+  font-family: $sans;
+  ul {
+    max-width: 400px;
+    li {
+      display: inline-block;
+      float: left;
+      margin-right: 25px;
+      @include type(1.2rem, 1.8rem, 0);
+      a {
+        font-weight: normal;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
 
-.shareComments {
+
+////////////////////////////////////////////////////////////////////////////////
+///// INDIVIDUAL STORY PAGES
+////////////////////////////////////////////////////////////////////////////////
+
+.individual__shareComments {
   margin: 3.6rem 0 4.8rem;
   ul {
     text-align: left;
@@ -33,7 +59,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: darken(rgba(#212225, .98), 10);
+  background-color: darken(rgba($bg, .98), 10);
   width: 100%;
   height: 100vh;
   z-index: 20;
@@ -82,27 +108,19 @@ body {
   top: 500px;
 }
 
-// @supports (display: grid) {
-//   #content-header {
-//     display: grid;
-//     grid-gap: 3%;
-//     grid-template-columns: 650px 1fr;
-//   }
-// }
-//
-// @supports not (display: grid) {
-//   .ch__image-block {
-//     width: 650px;
-//     float: left;
-//   }
-//   .ch__side-block {
-//     width: calc(97% - 650px);
-//     float: right;
-//   }
-// }
-
 .individual-well {
   padding-top: 40px;
+  p {
+    max-width: 55%;
+  }
+}
+
+.individual__story-head {
+  padding-top: 40px;
+}
+
+.individual__story-head, .individual__byline-block {
+  max-width: 55%;
 }
 
 #content-header img {
@@ -112,7 +130,7 @@ body {
   padding-top: 2.4rem;
   color: white;
   font-family: $sans;
-  background-color: darken(#212225, 2%);
+  background-color: darken($bg, 2%);
   padding: 20px;
   position: relative;
   top: -2px;
@@ -126,29 +144,9 @@ body {
   }
   p {
     @include type(1.4rem, 1.8rem, .9rem);
+    max-width: none;
     &:last-of-type {
       margin-bottom: 0;
-    }
-  }
-}
-
-#hc-nav {
-  width: 55%;
-  float: left;
-  position: relative;
-  top: 45px;
-  font-family: $sans;
-  ul {
-    max-width: 400px;
-    li {
-      display: inline-block;
-      float: left;
-      margin-right: 25px;
-      @include type(1.2rem, 1.8rem, 0);
-      a {
-        font-weight: normal;
-        text-transform: uppercase;
-      }
     }
   }
 }
@@ -161,6 +159,7 @@ body {
   border-top: 1px solid white;
   p {
     @include type(1.4rem, 2.4rem, 1.2rem);
+    max-width: none;
   }
   a {
     font-weight: normal;
@@ -169,6 +168,57 @@ body {
     border-bottom: 1px solid $dmnblue;
     &:hover {
       text-decoration: none;
+    }
+  }
+}
+
+
+////////////////////////////////////////////////////////////////////////////////
+///// INDIVIDUAL STORY PAGES
+////////////////////////////////////////////////////////////////////////////////
+
+#latest {
+  max-width: 1000px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.hc__update {
+  font-family: $sans;
+  color: white;
+  border-bottom: 1px solid $black50;
+  margin-bottom: 1.8rem;
+  padding-bottom: 1.8rem;
+  h5 {
+    margin-bottom: 1.2rem;
+  }
+  a {
+    color: white;
+  }
+}
+.update__date {
+  @include type(1.2rem, 1.8rem, .9rem);
+}
+.update__image-group {
+  display: inline-block;
+  float: left;
+  margin-right: 20px;
+  p {
+    float: left;
+  }
+  img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    float: left;
+    margin-right: 10px;
+  }
+  span {
+    float: left;
+    @include type(1.3rem, 30px, 0);
+    &:first-of-type {
+      margin-right: 10px;
     }
   }
 }

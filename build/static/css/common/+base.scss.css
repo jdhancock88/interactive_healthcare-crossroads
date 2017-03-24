@@ -205,7 +205,6 @@ V. CONTENT WELL
   width: 90%; }
 
 .content-well > p {
-  max-width: 55%;
   font-size: 1.7rem;
   line-height: 2.4rem;
   font-family: "PT Serif", Georgia, Times, serif;
@@ -229,9 +228,7 @@ VI. STORY HEAD, BYLINES AND INTRO
 */
 #story-head {
   margin: 4.8rem 0 2.4rem 0;
-  color: white;
-  max-width: 55%;
-  padding-top: 40px; }
+  color: white; }
 
 #story-head h1 {
   color: white;
@@ -251,9 +248,6 @@ VI. STORY HEAD, BYLINES AND INTRO
   line-height: 2.4rem;
   margin-bottom: 2.4rem;
   text-transform: uppercase; }
-
-.byline-block {
-  max-width: 55%; }
 
 .byline-block p {
   color: white;
