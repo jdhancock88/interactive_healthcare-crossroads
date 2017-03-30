@@ -107,25 +107,34 @@ googletag.enableServices();
 
 
 <section class="content-well clearfix individual-well">
+
   <nav id="hc-nav">
     <ul class="clearfix">
       <li><a href="#">Home</a></li>
-      <li><a href="#">Stories</a></li>
+      <li><a id="stories" href="#">Stories</a></li>
       <li><a href="#">Data</a></li>
-      <li><a href="#">Latest</a></li>
+      <li><a href="latest.html">Latest</a></li>
     </ul>
-
   </nav>
-  <section id="content-header" class="clearfix">
-    <div class="ch__image-block">
-  	  {{img.jpg('orlie', 'Michael Orlie poses with his custom-painted prosthetic leg.')}}
-    </div>
+
+  <div class="hc__hero clearfix">
+    <{{img.jpg('orlie2', 'Michael Orlie')}}
+  </div>
+
+  <section id="hc-header" class="clearfix">
     <div class="ch__side-block">
       <h4>Michael Orlie</h4>
       <h6>34, Cabinet maker</h6>
       <p><strong>Lives: </strong>Frisco, Texas</p>
       <p><strong>Family: </strong>Married, three children</p>
-      <p>Political bar here</p>
+      <div id="political-lean" class="clearfix">
+        <p><strong>Political leaning</strong></p>
+        <span class="lean__container">
+          <span class="lean__bar lean--right-bar lean--right4"></span>
+        </span>
+        <p class="lean__label lean--left">Liberal</p>
+        <p class="lean__label lean--right">Conservative</p>
+      </div>
       <p><strong>Healthcare before ACA:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc volutpat velit sit amet ipsum congue, nec tempus urna venenatis. Vivamus urna quam, dictum nec volutpat quis, tempus sit amet eros. Maecenas tincidunt erat id metus sagittis porta. Vivamus ultricies nec urna et convallis. Nulla ac enim purus. Etiam euismod ultricies commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ornare ac magna at interdum. Pellentesque eu purus ut erat finibus mollis eget vel erat.</p>
       <p><strong>Healthcare now: </strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc volutpat velit sit amet ipsum congue, nec tempus urna venenatis. Vivamus urna quam, dictum nec volutpat quis, tempus sit amet eros. Maecenas tincidunt erat id metus sagittis porta. Vivamus ultricies nec urna et convallis. Nulla ac enim purus. Etiam euismod ultricies commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ornare ac magna at interdum. Pellentesque eu purus ut erat finibus mollis eget vel erat.</p>
       <p><strong>Cost: </strong>$1,350 a month.</p>
@@ -170,7 +179,28 @@ googletag.enableServices();
 
     <div id="related-stream">
       <h4>Related stories</h4>
+    </div>
 
+    <div id="story-panel">
+      <div class="inner__wrapper">
+        <img class="story__close" src="images/_white-x.svg" alt="Close" />
+        <h4>Healthcare at a Crossroads</h4>
+        <h6>The Stories</h6>
+        <ul>
+          <li class="clearfix"><img class="story__link-mug" src="images/_orlie.jpg" alt=""/><a href="#">Michael Orlie <span>34, Cabinet Maker</span></a></li>
+          <li class="clearfix"><img class="story__link-mug" src="images/_hunter.jpg"  alt=""/><a href="#">LaRonda Hunter <span>50, Small business owner</span></a></li>
+          <li class="clearfix"><img class="story__link-mug" src="images/_orlie.jpg" alt=""/><a href="#">Michael Orlie <span>34, Cabinet Maker</span></a></li>
+          <li class="clearfix"><img class="story__link-mug" src="images/_hunter.jpg"  alt=""/><a href="#">LaRonda Hunter <span>50, Small business owner</span></a></li>
+          <li class="clearfix"><img class="story__link-mug" src="images/_orlie.jpg" alt=""/><a href="#">Michael Orlie <span>34, Cabinet Maker</span></a></li>
+          <li class="clearfix"><img class="story__link-mug" src="images/_hunter.jpg"  alt=""/><a href="#">LaRonda Hunter <span>50, Small business owner</span></a></li>
+          <li class="clearfix"><img class="story__link-mug" src="images/_orlie.jpg" alt=""/><a href="#">Michael Orlie <span>34, Cabinet Maker</span></a></li>
+          <li class="clearfix"><img class="story__link-mug" src="images/_hunter.jpg"  alt=""/><a href="#">LaRonda Hunter <span>50, Small business owner</span></a></li>
+          <li class="clearfix"><img class="story__link-mug" src="images/_orlie.jpg" alt=""/><a href="#">Michael Orlie <span>34, Cabinet Maker</span></a></li>
+          <li class="clearfix"><img class="story__link-mug" src="images/_hunter.jpg"  alt=""/><a href="#">LaRonda Hunter <span>50, Small business owner</span></a></li>
+          <li class="clearfix"><img class="story__link-mug" src="images/_orlie.jpg" alt=""/><a href="#">Michael Orlie <span>34, Cabinet Maker</span></a></li>
+          <li class="clearfix"><img class="story__link-mug" src="images/_hunter.jpg"  alt=""/><a href="#">LaRonda Hunter <span>50, Small business owner</span></a></li>
+        </ul>
+      </div>
     </div>
 
     <p class="twitter-tag">Follow writer name on Twitter at <a href="urlhere">@twittertag.</a></p>

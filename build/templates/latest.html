@@ -45,11 +45,11 @@
         <p class="update__date">{{date}}</p>
         <h5><a href="{{linkurl}}">{{linktext}}</a></h5>
         {{#each names}}
-          <div class="update__image-group">
+          <div class="update__image-group clearfix">
             {{#ifAll this 'All'}}
               {{#if @first}}<p>Related to: </p>{{/if}}
               <img src="images/_{{{splitName this}}}.jpg" alt="{{this}}"  />
-              <span>{{this}}</span>
+              <span><a href="{{{splitName this}}}.html">{{this}}</a></span>
             {{/ifAll}}
           </div>
         {{/each}}
@@ -121,17 +121,18 @@ googletag.enableServices();
 
 <section class="content-well latest__content-well clearfix">
 
-	<div class="shareComments shareCommentsTop">
-		<ul id="share-bar1"></ul>
-	</div>
-	<!-- end shareComments -->
+  <nav id="hc-nav">
+    <ul class="clearfix">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Stories</a></li>
+      <li><a href="#">Data</a></li>
+      <li><a href="latest.html">Latest</a></li>
+    </ul>
+  </nav>
 
     <div id="latest">
-
+      <h4>Healthcare at a Crossroads: The Latest</h4>
     </div>
-
-
-
 
     <section class="credits clearfix">
         <p>Author: <a href="mailto:emailaddress">Name</a></p>
