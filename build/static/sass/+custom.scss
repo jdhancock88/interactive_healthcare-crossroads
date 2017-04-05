@@ -22,28 +22,57 @@ body {
 }
 
 #hc-nav {
-  width: 55%;
   position: relative;
-  font-family: $sans;
   margin-bottom: 2.4rem;
+  padding-left: 10px;
+  border-left: 3px solid white;
+  margin-top: 4.8rem;
+  font-family: $sans;
+  padding-bottom: 2px;
+  h5 {
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    text-transform: uppercase;
+    border-bottom: 3px solid white;
+    margin: 0 0 10px -10px;
+    padding: 0 0 10px 10px;
+    @include type(4rem, 1em, 10px);
+  }
   ul {
-    max-width: 400px;
     li {
       display: inline-block;
       float: left;
-      margin-right: 25px;
-      @include type(1.2rem, 1.8rem, 0);
+      margin-right: 50px;
+      font-family: $sans;
+      @include type(1.4rem, 1.8rem, 0);
       a {
         font-weight: normal;
         text-transform: uppercase;
         color: white;
         border-bottom: 1px solid $dmnblue;
+        @include transition(all, .1s, ease-out);
         &:hover {
           text-decoration: none;
+          border-bottom: 3px solid $dmnblue;
         }
         &:visited {
           color: white;
         }
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  #hc-nav {
+    h5 {
+      font-size: 1.8rem;
+      width: 100%;
+    }
+    ul{
+      li {
+        margin-right: 20px;
       }
     }
   }
@@ -61,75 +90,20 @@ body {
   }
 }
 
-#health-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: darken(rgba($bg, .98), 10);
-  width: 100%;
-  height: 100vh;
-  z-index: 20;
-}
-
-.overlay__container {
-  width: 30%;
-  max-width: 600px;
-  margin: 0 auto;
-  display: table;
-  height: 100%;
-  @include transition(all, 1s, ease-out);
-  opacity: 1;
-  position: relative;
-  top: 0;
-}
-
-.overlay__content {
-  display: table-cell;
-  vertical-align: middle;
-  color: white;
-  position: relative;
-  top: -20px;
-  img {
-    width: 100%;
-    margin-bottom: 1.2rem;
-  }
-  blockquote {
-    font-family: "Cormorant Garamond", Georgia, serif;
-    @include type(2rem, 3rem, 0);
-    font-style: italic;
-    font-weight: 300;
-    text-align: center;
-    margin-bottom: 2.4rem;
-  }
-  p {
-    font-family: $sans;
-    text-align: center;
-    text-transform: uppercase;
-    @include type(1.4rem, 1.4rem, 0);
-  }
-}
-
-.init--display {
-  opacity: 0;
-  top: 500px;
-}
-
 .individual-well {
-  padding-top: 40px;
   p {
     max-width: 55%;
   }
 }
 
-.individual__story-head {
-}
-
 .individual__story-head, .individual__byline-block {
   max-width: 55%;
 }
+
 #hc-header {
   width: 40%;
   float: right;
+
 }
 .ch__side-block {
   padding-top: 2.4rem;
@@ -154,10 +128,14 @@ body {
       margin-bottom: 0;
     }
   }
+  strong {
+    text-transform: uppercase;
+  }
 }
 
 #political-lean {
-  margin-bottom: 1.2rem;
+  margin: .9rem 0 2.4rem;
+  border-bottom: 1px dotted $black66;
 }
 .lean__label {
   font-size: 1.2rem !important;
@@ -235,8 +213,46 @@ body {
   left: 50%;
 }
 
+@media (max-width: 900px) {
+  #hc-header {
+    width: 100%;
+    float: none;
+  }
+  .ch__bio {
+    width: 200px;
+    float: left;
+    padding-right: 20px;
+    border-right: 1px dotted $black66;
+  }
+  .ch__blurb {
+    width: calc(100% - 220px);
+    float: right;
+  }
+  #political-lean {
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 650px) {
+  .ch__bio, .ch__blurb {
+    width: 100%;
+    float: none;
+    border-right: none;
+    p {
+      @include type(1.2rem, 1.5rem, .6rem);
+    }
+  }
+  #political-lean {
+    margin-bottom: 2.4rem;
+    border-bottom: 1px dotted $black66;
+  }
+
+}
+
 #related-stream {
-  width: 55%;
+  max-width: 55%;
+  width: 100%;
   color: white;
   font-family: $sans;
   padding-top: 2.4rem;
@@ -250,9 +266,17 @@ body {
     color: white;
     display: inline;
     border-bottom: 1px solid $dmnblue;
+    @include transition(all, .1s, ease-out);
     &:hover {
       text-decoration: none;
+      border-bottom: 3px solid $dmnblue;
     }
+  }
+}
+
+@media (max-width: 900px) {
+  .individual-well p, .individual__story-head, .individual__byline-block, #related-stream {
+    max-width: none;
   }
 }
 
@@ -302,8 +326,17 @@ body {
   }
   @media (max-width: 600px) {
     h5 {
-      @include type(1.8rem, 2.4rem, 1.2rem);
+      @include type(1.6rem, 2.4rem, 1.2rem);
     }
+  }
+}
+.hc__label {
+  float: left;
+  @include type(1.3rem, 30px, 0);
+  margin-right: 10px;
+  @media (max-width: 500px) {
+    float: none;
+    clear: both;
   }
 }
 .update__date {
@@ -341,9 +374,6 @@ body {
     font-weight: bold;
   }
   @media (max-width: 500px) {
-    float: none;
-    display: block;
-    clear: both;
     margin-bottom: 5px;
     p {
       float: none;
@@ -351,96 +381,4 @@ body {
   }
 }
 
-
-////////////////////////////////////////////////////////////////////////////////
-///// STORY DRAWER
-////////////////////////////////////////////////////////////////////////////////
-
-#story-panel {
-  width: 75%;
-  max-width: 500px;
-  height: 100vh;
-  overflow: hidden;
-  display: block;
-  position: fixed;
-  top: 0;
-  background-color: darken($bg, 4%);
-  z-index: 50;
-  color: white;
-  font-family: $sans;
-  left: -500px;
-  box-sizing: content-box !important;
-  -webkit-box-sizing: content-box !important;
-  @include transition (all, .25s, ease-out);
-  h4, h6 {
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-  h4 {
-    padding-right: 60px;
-  }
-  ul {
-    margin-top: 2.4rem;
-    width: calc(100% - 30px);
-  }
-  li {
-    border-bottom: 1px solid white;
-    padding: 1.2rem 5px;
-    @include transition(all, .2s, ease-out);
-    &:last-of-type {
-      border-bottom: none;
-      margin-bottom: 60px;
-    }
-    &:hover {
-      background-color: darken($bg, 2%);
-    }
-  }
-  a {
-    display: block;
-    width: calc(100% - 60px);
-    float: left;
-    color: white;
-    @include type(16px, 16px, 0);
-    padding-top: 8px;
-    span {
-      @include type(12px, 12px, 0);
-      display: block;
-      margin-top: 6px;
-    }
-    &:visited {
-      color: white;
-    }
-    &:hover {
-      text-decoration: none;
-    }
-  }
-}
-
-.story__link-mug {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  display: inline;
-  margin-right: 10px;
-  float: left;
-}
-.inner__wrapper {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  padding: 20px 20px 20px;
-  overflow-y: scroll;
-  box-sizing: content-box !important;
-  -webkit-box-sizing: content-box !important;
-}
-.story--display {
-  left: 0 !important;
-}
-.story__close {
-  position: absolute;
-  top: 20px;
-  right: 40px;
-  width: 25px;
-  height: 25px;
-  cursor: pointer;
-}
+@import '_story_drawer';

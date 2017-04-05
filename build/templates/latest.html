@@ -45,9 +45,13 @@
         <p class="update__date">{{date}}</p>
         <h5><a href="{{linkurl}}">{{linktext}}</a></h5>
         {{#each names}}
+          {{#if @first}}
+            {{#ifAll this 'All'}}
+              <p class="hc__label">Related to:</p>
+              {{/ifAll}}
+          {{/if}}
           <div class="update__image-group clearfix">
             {{#ifAll this 'All'}}
-              {{#if @first}}<p>Related to: </p>{{/if}}
               <img src="images/_{{{splitName this}}}.jpg" alt="{{this}}"  />
               <span><a href="{{{splitName this}}}.html">{{this}}</a></span>
             {{/ifAll}}
@@ -121,14 +125,7 @@ googletag.enableServices();
 
 <section class="content-well latest__content-well clearfix">
 
-  <nav id="hc-nav">
-    <ul class="clearfix">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Stories</a></li>
-      <li><a href="#">Data</a></li>
-      <li><a href="latest.html">Latest</a></li>
-    </ul>
-  </nav>
+  {% include "_hc-nav.html" %}
 
     <div id="latest">
       <h4>Healthcare at a Crossroads: The Latest</h4>

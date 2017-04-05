@@ -2,16 +2,6 @@
 global $:true, window:true, _:true, Handlebars:true
 */
 
-setTimeout(() => {
-  $('.overlay__container').removeClass('init--display');
-}, 1000);
-
-$(window).scroll(() => {
-  if ($(window).scrollTop() > 10) {
-    $('#health-overlay').fadeOut(500);
-  }
-});
-
 
 /*
 ////////////////////////////////////////////////////////////////////////////////
@@ -29,7 +19,7 @@ function buildLatest(stream) {
     return new Handlebars.SafeString(last);
   });
 
-  Handlebars.registerHelper('ifAll', function(a, b, opts) {
+  Handlebars.registerHelper('ifAll', function (a, b, opts) {
     if (a !== b) {
       return opts.fn(this);
     }
@@ -78,7 +68,7 @@ function formatStream(data) {
 
 $.ajax({
   dataType: 'json',
-  url: 'http://interactives.dallasnews.com/data-store/2017/04-2017-healthcare-crossroads.json',
+  url: 'https://interactives.dallasnews.com/data-store/2017/04-2017-healthcare-crossroads.json',
   success: formatStream,
   cache: false,
 });

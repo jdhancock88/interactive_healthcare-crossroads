@@ -236,8 +236,8 @@ VI. STORY HEAD, BYLINES AND INTRO
 
 #story-head h2 {
   color: white;
-  font-size: 3.2rem;
-  line-height: 3.6rem; }
+  font-size: 4.2rem;
+  line-height: 4.8rem; }
 
 #story-head h3 {
   font-family: 'Gotham A', 'Gotham B', Arial, sans-serif;
@@ -289,8 +289,8 @@ p.subhead {
     line-height: 6rem;
     margin-bottom: 1.2rem; }
   #story-head h2 {
-    font-size: 2.4rem;
-    line-height: 3rem;
+    font-size: 3.6rem;
+    line-height: 4.2rem;
     margin-bottom: 1.2rem; }
   #story-head h3 {
     font-size: 1.4rem;
@@ -837,91 +837,61 @@ body {
   overflow: hidden; }
 
 #hc-nav {
-  width: 55%;
   position: relative;
+  margin-bottom: 2.4rem;
+  padding-left: 10px;
+  border-left: 3px solid white;
+  margin-top: 4.8rem;
   font-family: "Gotham A", "Gotham B", Arial, sans-serif;
-  margin-bottom: 2.4rem; }
-  #hc-nav ul {
-    max-width: 400px; }
-    #hc-nav ul li {
-      display: inline-block;
-      float: left;
-      margin-right: 25px;
-      font-size: 1.2rem;
-      line-height: 1.8rem;
-      margin-bottom: 0; }
-      #hc-nav ul li a {
-        font-weight: normal;
-        text-transform: uppercase;
-        color: white;
-        border-bottom: 1px solid #0185d3; }
-        #hc-nav ul li a:hover {
-          text-decoration: none; }
-        #hc-nav ul li a:visited {
-          color: white; }
+  padding-bottom: 2px; }
+  #hc-nav h5 {
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    text-transform: uppercase;
+    border-bottom: 3px solid white;
+    margin: 0 0 10px -10px;
+    padding: 0 0 10px 10px;
+    font-size: 4rem;
+    line-height: 1em;
+    margin-bottom: 10px; }
+  #hc-nav ul li {
+    display: inline-block;
+    float: left;
+    margin-right: 50px;
+    font-family: "Gotham A", "Gotham B", Arial, sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    margin-bottom: 0; }
+    #hc-nav ul li a {
+      font-weight: normal;
+      text-transform: uppercase;
+      color: white;
+      border-bottom: 1px solid #0185d3;
+      -webkit-transtion: all 0.1s ease-out;
+      -moz-transition: all 0.1s ease-out;
+      -o-transition: all 0.1s ease-out;
+      transition: all 0.1s ease-out; }
+      #hc-nav ul li a:hover {
+        text-decoration: none;
+        border-bottom: 3px solid #0185d3; }
+      #hc-nav ul li a:visited {
+        color: white; }
+
+@media (max-width: 450px) {
+  #hc-nav h5 {
+    font-size: 1.8rem;
+    width: 100%; }
+  #hc-nav ul li {
+    margin-right: 20px; } }
 
 .individual__shareComments {
   margin: 3.6rem 0 4.8rem; }
   .individual__shareComments ul {
     text-align: left; }
 
-#health-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: rgba(9, 9, 10, 0.98);
-  width: 100%;
-  height: 100vh;
-  z-index: 20; }
-
-.overlay__container {
-  width: 30%;
-  max-width: 600px;
-  margin: 0 auto;
-  display: table;
-  height: 100%;
-  -webkit-transtion: all 1s ease-out;
-  -moz-transition: all 1s ease-out;
-  -o-transition: all 1s ease-out;
-  transition: all 1s ease-out;
-  opacity: 1;
-  position: relative;
-  top: 0; }
-
-.overlay__content {
-  display: table-cell;
-  vertical-align: middle;
-  color: white;
-  position: relative;
-  top: -20px; }
-  .overlay__content img {
-    width: 100%;
-    margin-bottom: 1.2rem; }
-  .overlay__content blockquote {
-    font-family: "Cormorant Garamond", Georgia, serif;
-    font-size: 2rem;
-    line-height: 3rem;
-    margin-bottom: 0;
-    font-style: italic;
-    font-weight: 300;
-    text-align: center;
-    margin-bottom: 2.4rem; }
-  .overlay__content p {
-    font-family: "Gotham A", "Gotham B", Arial, sans-serif;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 1.4rem;
-    line-height: 1.4rem;
-    margin-bottom: 0; }
-
-.init--display {
-  opacity: 0;
-  top: 500px; }
-
-.individual-well {
-  padding-top: 40px; }
-  .individual-well p {
-    max-width: 55%; }
+.individual-well p {
+  max-width: 55%; }
 
 .individual__story-head, .individual__byline-block {
   max-width: 55%; }
@@ -951,9 +921,12 @@ body {
     max-width: none; }
     .ch__side-block p:last-of-type {
       margin-bottom: 0; }
+  .ch__side-block strong {
+    text-transform: uppercase; }
 
 #political-lean {
-  margin-bottom: 1.2rem; }
+  margin: .9rem 0 2.4rem;
+  border-bottom: 1px dotted #424242; }
 
 .lean__label {
   font-size: 1.2rem !important; }
@@ -1030,8 +1003,38 @@ body {
   width: 50%;
   left: 50%; }
 
+@media (max-width: 900px) {
+  #hc-header {
+    width: 100%;
+    float: none; }
+  .ch__bio {
+    width: 200px;
+    float: left;
+    padding-right: 20px;
+    border-right: 1px dotted #424242; }
+  .ch__blurb {
+    width: calc(100% - 220px);
+    float: right; }
+  #political-lean {
+    border-bottom: none;
+    margin-bottom: 0; } }
+
+@media (max-width: 650px) {
+  .ch__bio, .ch__blurb {
+    width: 100%;
+    float: none;
+    border-right: none; }
+    .ch__bio p, .ch__blurb p {
+      font-size: 1.2rem;
+      line-height: 1.5rem;
+      margin-bottom: 0.6rem; }
+  #political-lean {
+    margin-bottom: 2.4rem;
+    border-bottom: 1px dotted #424242; } }
+
 #related-stream {
-  width: 55%;
+  max-width: 55%;
+  width: 100%;
   color: white;
   font-family: "Gotham A", "Gotham B", Arial, sans-serif;
   padding-top: 2.4rem;
@@ -1045,9 +1048,18 @@ body {
     font-weight: normal;
     color: white;
     display: inline;
-    border-bottom: 1px solid #0185d3; }
+    border-bottom: 1px solid #0185d3;
+    -webkit-transtion: all 0.1s ease-out;
+    -moz-transition: all 0.1s ease-out;
+    -o-transition: all 0.1s ease-out;
+    transition: all 0.1s ease-out; }
     #related-stream a:hover {
-      text-decoration: none; }
+      text-decoration: none;
+      border-bottom: 3px solid #0185d3; }
+
+@media (max-width: 900px) {
+  .individual-well p, .individual__story-head, .individual__byline-block, #related-stream {
+    max-width: none; } }
 
 .latest__content-well {
   max-width: 800px;
@@ -1081,9 +1093,20 @@ body {
     color: white; }
   @media (max-width: 600px) {
     .hc__update h5 {
-      font-size: 1.8rem;
+      font-size: 1.6rem;
       line-height: 2.4rem;
       margin-bottom: 1.2rem; } }
+
+.hc__label {
+  float: left;
+  font-size: 1.3rem;
+  line-height: 30px;
+  margin-bottom: 0;
+  margin-right: 10px; }
+  @media (max-width: 500px) {
+    .hc__label {
+      float: none;
+      clear: both; } }
 
 .update__date {
   font-size: 1.2rem;
@@ -1119,9 +1142,6 @@ body {
     font-weight: bold; }
   @media (max-width: 500px) {
     .update__image-group {
-      float: none;
-      display: block;
-      clear: both;
       margin-bottom: 5px; }
       .update__image-group p {
         float: none; } }
@@ -1208,7 +1228,7 @@ body {
 .story__close {
   position: absolute;
   top: 20px;
-  right: 40px;
+  right: 50px;
   width: 25px;
   height: 25px;
   cursor: pointer; }
@@ -1484,7 +1504,7 @@ body {
     right: 0; }
   #header-account button {
     text-indent: -9999px;
-    background-image: url("//intearctives.dallasnews.com/common/templates/v1.0/images/identity.svg");
+    background-image: url("//interactives.dallasnews.com/common/templates/v1.0/images/identity.svg");
     background-repeat: no-repeat;
     background-size: 18px;
     background-position: left center;
