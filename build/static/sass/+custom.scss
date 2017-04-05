@@ -21,6 +21,20 @@ body {
   overflow: hidden;
 }
 
+////////////////////////////////////////////////////////////////////////////////
+///// HOME PAGE
+////////////////////////////////////////////////////////////////////////////////
+#cast-grid {
+  height: calc(100vh - 51px);
+  width: 100%;
+}
+.cast__item {
+  background: url('../images/_defaultImage.jpg') no-repeat center center;
+}
+
+
+
+
 #hc-nav {
   position: relative;
   margin-bottom: 2.4rem;
