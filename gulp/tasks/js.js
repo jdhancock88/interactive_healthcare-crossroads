@@ -24,6 +24,7 @@ module.exports = function() {
     .pipe(gulp.dest('./public/js'));
   // Copy non-bundled scripts
   var copied = gulp.src(['./build/static/js/**/*.js','!./build/static/js/**/+*.js'])
+    .pipe(babel({presets: ['es2015']}))
     .pipe(jshint())
     .pipe(jshint.reporter(stylish))
     .pipe(sourcemaps.init())

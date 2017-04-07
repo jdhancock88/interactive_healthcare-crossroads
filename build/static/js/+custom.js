@@ -1,7 +1,6 @@
 /* global $:true */
 
 $('#stories').click(() => {
-  console.log('click');
   $('#story-panel').addClass('story--display');
   $('body').addClass('no--scroll');
 });

@@ -128,8 +128,11 @@ googletag.enableServices();
   {% include "_hc-nav.html" %}
 
     <div id="latest">
-      <h4>Healthcare at a Crossroads: The Latest</h4>
+      <h4>The Latest</h4>
     </div>
+
+    {% include "_story-drawer.html" %}
+
 
     <section class="credits clearfix">
         <p>Author: <a href="mailto:emailaddress">Name</a></p>
@@ -176,7 +179,7 @@ googletag.enableServices();
 
 
 {%block custom_foot%}
-	<script type="text/javascript"></script>
+<script type="text/javascript" src="js/individual.js"></script>
 {%endblock%}
 
 

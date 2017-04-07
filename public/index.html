@@ -43,7 +43,7 @@
 	<link rel="stylesheet" type="text/css" href="//interactives.dallasnews.com/common/templates/v1.1/css/share.css"/>
 	<link rel="stylesheet" type="text/css" href="//interactives.dallasnews.com/common/templates/v1.0/css/print.css" media="print"/>
 	<link rel="stylesheet" type="text/css" href="//cloud.typography.com/6922714/7642152/css/fonts.css" />
-	<link href='//fonts.googleapis.com/css?family=PT+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+	<link href='//fonts.googleapis.com/css?family=PT+Serif:400,400italic,700,700italic|Open+Sans+Condensed:700' rel='stylesheet' type='text/css'>
 
 	<link rel="stylesheet" type="text/css" href="css/styles-bundle.css" />
 
@@ -124,7 +124,7 @@ googletag.enableServices();
 	-->
 
 </head>
-<body>
+<body class="no-pad">
 
 	<!-- Google Tag Manager DMN -->
 	<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-T45ZQL" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -169,53 +169,119 @@ googletag.enableServices();
 
 	
 
-    <section id="cast-grid">
-      <div class="cast__item"></div>
-      <div class="cast__item"></div>
-      <div class="cast__item"></div>
-      <div class="cast__item"></div>
-      <div class="cast__item"></div>
-      <div class="cast__item"></div>
-      <div class="cast__item"></div>
-      <div class="cast__item"></div>
+    <section id="intro">
+      <div id="intro__content">
+        <img src="images/flagicon.svg" alt="Flag icon" />
+        <div class="intro__slide">
+          <h2>Health Complex</h2>
+          <h4>Why healthcare reform is so hard</h4>
+        </div>
+
+        <div class="intro__slide noshow">
+          <h6>As the future of health coverage in the United States remains up the air, we looked at eight North Texans’ experiences with the Affordable Care Act -- who it helped, where it fell short, and what it cost.</h6>
+        </div>
+
+        <div class="intro__slide noshow">
+          <h6>The issues they raised shows just how hard it is to reconcile the concerns of competing interests into a comprehensive national healthcare policy.</h6>
+        </div>
+
+        <div class="intro__slide noshow">
+          <h6>Some say the system needs to cover everyone, no matter how sick. Others were willing to forego insurance and pay a penalty. Everyone agreed spiraling costs are a problem.</h6>
+        </div>
+
+        <div class="intro__slide noshow">
+          <h6>Explore the real-life implications of Washington policy decisions through their stories. Click on an individual to read their story.</h6>
+          <button id="intro__begin">Begin</button>
+        </div>
+      </div>
+
+      <nav id="intro__nav">
+        <img id="arrow__left" class="nav__arrow" src="images/arrow-left.svg" alt="Move back" />
+        <ul id="intro__nav-circles" class="clearfix">
+          <li class="slide__circle slide--active">Slide 1</li>
+          <li class="slide__circle">Slide 2</li>
+          <li class="slide__circle">Slide 3</li>
+          <li class="slide__circle">Slide 4</li>
+          <li class="slide__circle">Slide 5</li>
+        </ul>
+        <img id="arrow__right" class="nav__arrow" src="images/arrow-right.svg" alt="Move back" />
+        <span id="intro__skip">Skip intro</span>
+      </nav>
+
+
     </section>
 
-
-    <!-- <section class="credits clearfix">
-        <p>Author: <a href="mailto:emailaddress">Name</a></p>
-        <p>Editor: <a href="mailto:emailaddress">Name</a></p>
-        <p>Copy Editor: <a href="mailto:emailaddress">Name</a></p>
-        <p>Photos: <a href="mailto:emailaddress">Name</a></p>
-        <p>Graphics: <a href="mailto:emailaddress">Name</a></p>
-        <p>Designer: <a href="mailto:emailaddress">Name</a></p>
-    </section> -->
-	<!-- end credits -->
-
-	<!-- <section class="more clearfix">
-		<h5>Read more from The Dallas Morning News</h5>
-		<a class="clearfix" href="#">
-			<img src="images/_defaultImage.jpg" alt="#" />
-			<h6>Story title goes here</h6>
-			<p>Description of the story goes in this spot here</p>
-		</a>
-		<a class="clearfix" href="#">
-			<img src="images/_defaultImage.jpg" alt="#" />
-			<h6>Story title goes here</h6>
-			<p>Description of the story goes in this spot here</p>
-		</a>
-		<a class="clearfix" href="#">
-			<img src="images/_defaultImage.jpg" alt="#" />
-			<h6>Story title goes here</h6>
-			<p>Description of the story goes in this spot here</p>
-		</a>
-	</section> -->
-	<!-- end more -->
-
-
-    <!-- <div class="shareComments">
-        <div id="comments"></div>
-	</div> -->
-	<!-- end shareComments -->
+    <section id="cast-grid">
+      <div class="cast__row clearfix">
+        <a class="cast__item" href="#" id="hunter">
+          <div class="cast__container">
+            <div class="cast__content">
+              <h3><span>LaRonda</span> <span>Hunter</span></h3>
+              <h6>“We all should take some responsibility for ourselves.”</h6>
+            </div>
+            <!-- <img src="images/_hunter-intro.jpg" alt="LaRonda Hunter"/> -->
+          </div>
+        </a>
+        <a class="cast__item" href="kelli-bennett.html" id="bennett">
+          <div class="cast__container">
+            <div class="cast__content">
+              <h3><span>Kelli</span> <span>Bennett</span></h3>
+              <h6>“For me, it’s pay or die”</h6>
+            </div>
+          </div>
+        </a>
+        <a class="cast__item" href="#" id="antoine">
+          <div class="cast__container">
+            <div class="cast__content">
+              <h3><span>Nicole</span> <span>Antoine</span></h3>
+              <h6>“Don’t make me pay for something I don’t need.”</h6>
+            </div>
+          </div>
+        </a>
+        <a class="cast__item" href="#" id="newman">
+          <div class="cast__container">
+            <div class="cast__content">
+              <h3><span>David</span> <span>Newman</span></h3>
+              <h6>“They all said the same thing, ‘You’re uninsurable.’”</h6>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="cast__row clearfix">
+        <a class="cast__item" href="#" id="orlie">
+          <div class="cast__container">
+            <div class="cast__content">
+              <h3><span>Kevin</span> <span>Orlie</span></h3>
+              <h6>“Quote quote quote”</h6>
+            </div>
+          </div>
+        </a>
+        <a class="cast__item" href="#" id="cutcher">
+          <div class="cast__container">
+            <div class="cast__content">
+              <h3><span>Jay</span> <span>Cutcher</span></h3>
+              <h6>“Quote quote quote”</h6>
+            </div>
+          </div>
+        </a>
+        <a class="cast__item" href="#">
+          <div class="cast__container">
+            <div class="cast__content">
+              <h3><span>Name</span> <span>Name</span></h3>
+              <h6>“Quote quote quote”</h6>
+            </div>
+          </div>
+        </a>
+        <a class="cast__item" href="#">
+          <div class="cast__container">
+            <div class="cast__content">
+              <h3><span>Name</span> <span>Name</span></h3>
+              <h6>“Quote quote quote”</h6>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
 
 
 <!-- end contentWell -->
@@ -253,7 +319,7 @@ googletag.enableServices();
 	<script type="text/javascript" src="js/scripts-bundle.js"></script>
 
 	
-	<script type="text/javascript"></script>
+	<script type="text/javascript" src="js/home.js"></script>
 
 
 
@@ -272,7 +338,7 @@ googletag.enableServices();
 </script>
 
 
-	<script type="text/javascript" src="//interactives.dallasnews.com/common/templates/v1.0/js/commonInteractives.js"></script>
+	<script type="text/javascript" src="//interactives.dallasnews.com/common/templates/v1.1/js/commonInteractives.js"></script>
 	<script type="text/javascript" src="https://sres.dallasnews.com/resrsc/js/biomniture.js"></script>
 	<script type="text/javascript" src="//interactives.dallasnews.com/common/templates/v1.0/js/actionsInteractives.js"></script>
 
