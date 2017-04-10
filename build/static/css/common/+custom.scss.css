@@ -208,12 +208,6 @@ GRID
   position: relative;
   overflow: hidden;
   -webkit-perspective: 1000; }
-  .cast__item h6 {
-    -webkit-transtion: all 0.35s ease-out;
-    -moz-transition: all 0.35s ease-out;
-    -o-transition: all 0.35s ease-out;
-    transition: all 0.35s ease-out;
-    opacity: 0; }
   .cast__item::before {
     position: absolute;
     width: 100%;
@@ -229,8 +223,6 @@ GRID
     transition: all 0.35s ease-out; }
   .cast__item:hover {
     transform: translate3d(0vw, 0, 0) scale(1.1); }
-    .cast__item:hover h6 {
-      opacity: 1; }
 
 .cast__container {
   display: table;
@@ -258,9 +250,10 @@ GRID
     font-family: 'Open Sans Condensed'; }
   .cast__content h3 {
     text-transform: uppercase;
-    margin-bottom: 1.2rem; }
+    margin-bottom: .3rem;
+    line-height: 1em; }
   .cast__content h6 {
-    width: 80%;
+    width: 85%;
     margin: 0 auto; }
   .cast__content span {
     display: block; }
@@ -304,9 +297,12 @@ GRID
     overflow: visible; }
   .cast__item {
     height: 50vw;
-    width: 100%; }
+    width: 100%;
+    background-position: 0 -30px; }
   .cast__content {
-    top: 60%; }
+    top: 55%; }
+    .cast__content h6 {
+      width: 95%; }
     .cast__content span {
       display: inline-block; }
   .cast--shift-left {

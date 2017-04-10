@@ -24,8 +24,8 @@ $('#intro__begin').on('click', removeIntro);
 // also updates the slide nav at the bottom of the screen
 function updateSlide() {
   // remove our click handlers so we don't gum up the works by advancing mid animation
-  $('#arrow__right').off('click', advanceSlide);
-  $('#arrow__left').off('click', rewindSlide);
+  $('#arrow__right').off('click');
+  $('#arrow__left').off('click');
 
   // fade out current slide and fade in next/previous slide based on direction
   $('.intro__slide').fadeOut(1000);
@@ -38,7 +38,9 @@ function updateSlide() {
     $('.slide__circle').eq(currentSlide).addClass('slide--active');
 
     // advancing or rewinding based on which arrow is clicked
-    $('#arrow__right').on('click', advanceSlide);
+    $('#arrow__right').click(() => {
+      advanceSlide();
+    });
     $('#arrow__left').on('click', rewindSlide);
   }, 1100);
 }
@@ -46,7 +48,6 @@ function updateSlide() {
 // checks if we are not at the end of the slides yet. if not, update currentSlide and
 // update slides
 function advanceSlide() {
-  clearInterval(advanceTimer);
   if (currentSlide < MAXSLIDES) {
     currentSlide += 1;
     updateSlide();
@@ -57,7 +58,6 @@ function advanceSlide() {
 
 // checks if we are at the first slie. if not, update currentSlide and update slides
 function rewindSlide() {
-  clearInterval(advanceTimer);
   if (currentSlide > 0) {
     currentSlide -= 1;
     updateSlide();
@@ -70,8 +70,14 @@ const advanceTimer = setInterval(() => { advanceSlide(); }, 7100);
 
 // advancing or rewinding based on which arrow is clicked, if advanced, the auto
 // advancing timer is cleared
-$('#arrow__right').on('click', advanceSlide);
-$('#arrow__left').on('click', rewindSlide);
+$('#arrow__right').click(() => {
+  advanceSlide();
+  clearInterval(advanceTimer);
+});
+$('#arrow__left').click(() => {
+  rewindSlide();
+  clearInterval(advanceTimer);
+});
 
 
 /*

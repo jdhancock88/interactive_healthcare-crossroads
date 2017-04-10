@@ -252,10 +252,6 @@ GRID
   position: relative;
   overflow: hidden;
   -webkit-perspective: 1000;
-  h6 {
-    @include transition(all, .35s, ease-out);
-    opacity: 0;
-  }
   &::before {
     position: absolute;
     width: 100%;
@@ -269,9 +265,6 @@ GRID
   }
   &:hover {
     transform: translate3d(0vw, 0, 0) scale(1.1);
-    h6 {
-      opacity: 1;
-    }
   }
 }
 .cast__container {
@@ -298,10 +291,11 @@ GRID
   }
   h3 {
     text-transform: uppercase;
-    margin-bottom: 1.2rem;
+    margin-bottom: .3rem;
+    line-height: 1em;
   }
   h6 {
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
   }
   span {
@@ -356,9 +350,13 @@ GRID
   .cast__item {
     height: 50vw;
     width: 100%;
+    background-position: 0 -30px;
   }
   .cast__content {
-    top: 60%;
+    top: 55%;
+    h6 {
+      width: 95%;
+    }
     span {
       display: inline-block;
     }
