@@ -39,6 +39,7 @@ function buildLatest(stream) {
 */
 
 function formatStream(data) {
+  console.log(data);
   // the individual we're looking for links for
   const PERSON = $('.ch__side-block h4').text();
   let stream = data;

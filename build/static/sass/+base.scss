@@ -505,14 +505,19 @@ IX. PULLQUOTES
 
 /*
 -------------------------------------------
-XI. VIDEO EMBEDS
+VIDEO EMBEDS
 -------------------------------------------
 */
 
 .video-block {
-  width:100%;
+  width: 100%;
   max-width: 650px;
   margin: 4.8rem auto;
+  font-size: 15px;
+  img {
+    max-width: 170px !important;
+    max-height: 18px !important;
+  }
 }
 .video-wrapper {
   position: relative;
@@ -527,6 +532,24 @@ XI. VIDEO EMBEDS
   width: 100%;
   height: 100%;
 }
+
+@media (max-width: 681px) {
+  .video-block {
+    img {
+      max-width: 130px !important;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .video-block {
+    img {
+      max-width: 80px !important;
+      max-height: 14px !important;
+    }
+  }
+}
+
 
 /*
 -------------------------------------------
@@ -759,6 +782,7 @@ XVI. MORE LINKS
   line-height: 1.8rem;
   font-weight: normal;
   letter-spacing: -.2px;
+  max-width: 100%;
 }
 
 @media (max-width: 600px) {

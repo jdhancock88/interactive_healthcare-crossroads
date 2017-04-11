@@ -350,15 +350,18 @@ GRID
   .cast__item {
     height: 50vw;
     width: 100%;
-    background-position: 0 -30px;
+    background-size: 125%;
+    background-position: right -30px;
   }
   .cast__content {
-    top: 55%;
+    top: 20%;
+    position: absolute;
+    right: 15px;
+    text-align: right;
+    width: 40%;
+    min-width: 170px;
     h6 {
-      width: 95%;
-    }
-    span {
-      display: inline-block;
+      width: 100%;
     }
   }
 
@@ -430,13 +433,23 @@ GRID
 
 @media (max-width: 450px) {
   #hc-nav {
+    img {
+      width: 40px;
+      height: 27px;
+      margin-right: 5px;
+    }
     h5 {
-      font-size: 1.8rem;
+      font-size: 27px;
+      margin-top: 2px;
+    }
+    h6 {
+      font-size: 1.4rem;
       width: 100%;
+      clear: both;
     }
     ul{
       li {
-        margin-right: 20px;
+        margin-right: 15px;
       }
     }
   }
@@ -651,7 +664,7 @@ GRID
 
 
 .latest__content-well {
-  max-width: 800px;
+  max-width: 650px;
   width: 90%;
   margin: 0 auto;
   nav {
@@ -661,7 +674,7 @@ GRID
   }
 }
 
-#latest {
+#latest, #about {
   h4 {
     color: white;
     font-family: $sans;
@@ -669,6 +682,12 @@ GRID
     font-weight: bold;
     margin-bottom: 2.4rem;
   }
+}
+
+.about__intro {
+  color: white;
+  font-family: $sans;
+  @include type(1.6rem, 2.4rem, 0);
 }
 
 .hc__update {
