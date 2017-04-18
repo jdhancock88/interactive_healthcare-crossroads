@@ -1,0 +1,244 @@
+{%extends 'base.html'%}
+{%import 'partials/img.html' as img%}
+
+
+{%block custom_meta%}
+<meta content="health care,health care reform,affordable care act,interactives,dallas,dallas news,dfw news,dallas newspaper,dallas morning news,dallas morning news newspaper" name="keywords" />
+
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<meta content="{{shareText}}" name="description" />
+<title>{{pageTitle}}</title>
+<meta property="og:url" content="https://interactives.dallasnews.com/2017/health-complex/individual.html" />
+<meta property="og:title" content="{{shareTitle}}"/>
+<meta property="og:description" content="{{shareText}}" name="description"/>
+<meta property="og:image" content="https://interactives.dallasnews.com/2017/health-complex/images/_ind-share.jpg"/>
+<meta property="og:image:height" content="630"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:type" content="article" />
+<meta property="article:author" content="{{authorFBProfile}}" />
+<meta property="article:publisher" content="//www.facebook.com/dallasmorningnews/" />
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@DMNBiz" />
+<meta name="twitter:creator" content="@{{authorTwitter}}" />
+
+<meta name="liveFyreID" content="{{id}}" />
+
+<meta name="parsely-page" id='parsely-page' content='{"title": "{{shareTitle}}", "link": "https://interactives.dallasnews.com/2017/health-complex/individual.html", "image_url": "https://interactives.dallasnews.com/2017/health-complex/images/_ind-share.jpg", "type": "post", "post_id": "{{id}}", "pub_date": "2017-04-20T12:00:00Z", "section": "health-care", "author": ["{{authors}}"], "tags": ["health care","health care reform","affordable care act","interactives","dallas","dallas news","dfw news","dallas newspaper","dallas morning news","dallas morning news newspaper"]}' />
+
+<meta property="og:keywords" content="health care,health care reform,affordable care act,interactives,dallas,dallas news,dfw news,dallas newspaper,dallas morning news,dallas morning news newspaper"/>
+
+<meta name="news_keywords" content="health care,health care reform,affordable care act,interactives,dallas,dallas news,dfw news,dallas newspaper,dallas morning news,dallas morning news newspaper"/>
+{%endblock%}
+
+
+{%block custom_head%}
+<link rel="canonical" href="{{url}}" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
+{%endblock%}
+
+
+{%block ad%}
+<script type="text/javascript" src="//www.googletagservices.com/tag/js/gpt.js"></script>
+<script type="text/javascript">
+DFP_networkId = "11222444";
+var DFPSlotSizes = [];
+if (jQuery(window).width() < 768)
+{
+var DFP_sitepage = "DMN/interactives";
+DFPSlotSizes = [320,50]
+var adSlot0 = googletag.defineSlot('/' + DFP_networkId + '/' + DFP_sitepage, DFPSlotSizes, "dfpAdPositionTop");
+adSlot0.setTargeting("position", "Top");
+adSlot0.addService(googletag.pubads());
+
+var adSlot1 = googletag.defineSlot('/' + DFP_networkId + '/' + DFP_sitepage, DFPSlotSizes, "dfpAdPositionMiddle");
+adSlot1.setTargeting("position", "Top2");
+adSlot1.addService(googletag.pubads());
+
+/*
+var adSlot2 = googletag.defineSlot('/' + DFP_networkId + '/' + DFP_sitepage, DFPSlotSizes, "dfpAdPositionBottom");
+adSlot2.setTargeting("position", "Top2");
+adSlot2.addService(googletag.pubads());
+*/
+}
+else
+{
+var DFP_sitepage = "DMN/interactives";
+ DFPSlotSizes = [[728,90],[970,30],[970,90],[970,250]]
+var adSlot0 = googletag.defineSlot('/' + DFP_networkId + '/' + DFP_sitepage, DFPSlotSizes, "dfpAdPositionTop");
+adSlot0.setTargeting("position", "Top");
+adSlot0.addService(googletag.pubads());
+
+var adSlot1 = googletag.defineSlot('/' + DFP_networkId + '/' + DFP_sitepage, DFPSlotSizes, "dfpAdPositionMiddle");
+adSlot1.setTargeting("position", "Top2");
+adSlot1.addService(googletag.pubads());
+
+/*
+var adSlot2 = googletag.defineSlot('/' + DFP_networkId + '/' + DFP_sitepage, DFPSlotSizes, "dfpAdPositionBottom");
+adSlot2.setTargeting("position", "Top2");
+adSlot2.addService(googletag.pubads());
+*/
+ }
+</script>
+<script type="text/javascript">
+googletag.pubads().enableSingleRequest();
+googletag.pubads().enableSyncRendering();
+googletag.enableServices();
+</script>
+{%endblock%}
+
+
+{%block content%}
+
+<section class="content-well clearfix individual-well">
+
+{% include "_hc-nav.html" %}
+
+  <div class="hc__hero clearfix">
+    {{img.jpg('trejo', 'Maricsa Trejo')}}
+  </div>
+
+  <section id="hc-header" class="clearfix">
+    <div class="ch__side-block">
+      <div class="ch__bio clearfix">
+        <h4>Maricsa Trejo</h4>
+        <h6>26, Part-time pastry chef at Small Brewpub and owner of La Casita Bakeshop</h6>
+        <p><strong>Lives: </strong>Dallas</p>
+        <p><strong>Family: </strong>Married, three children</p>
+        <div id="political-lean" class="clearfix">
+          <p><strong>Where she stands politically:</strong></p>
+          <span class="lean__container">
+            <span class="lean__bar lean--3"></span>
+          </span>
+          <p class="lean__label lean--left">Liberal</p>
+          <p class="lean__label lean--right">Conservative</p>
+        </div>
+      </div>
+      <div class="ch__blurb">
+        <p><strong>Health coverage needs: </strong>She’s healthy and has insurance in case something goes wrong</p>
+        <p><strong>For her, health care is: </strong>Money, hope, a pain</p>
+        <p><strong>What she had before the ACA: </strong>Insurance through a bakery she worked for in Oregon</p>
+        <p><strong>What she has now: </strong>A Blue Cross Blue Shield marketplace plan that, after a $204 subsidy, costs $155 for monthly premiums with no deductible</p>
+      </div>
+    </div>
+  </section>
+  <!-- end contentHeader -->
+
+
+  	<header id="story-head" class="individual__story-head">
+  		<h2>Subsidies help pastry chef buy in to a program she hopes will help others</h2>
+  	</header>
+  		<!-- end storyHead -->
+
+      <div class="byline-block individual__byline-block">
+          <p>By <a target="_blank" href="mailto:bmeyer@dallasnews.com">Brendan Meyer</a> | Staff Writer</p>
+          <p>Published April 20, 2017</p>
+      </div>
+      <!-- end bylineBlock -->
+
+  	<div class="shareComments shareCommentsTop individual__shareComments">
+  		<ul id="share-bar1"></ul>
+  	</div>
+  	<!-- end shareComments -->
+
+    <p>Maricsa Trejo is healthy.</p>
+    <p>She’s 26 and rarely schedules doctor appointments. She works as a part-time pastry chef, recently started her own business and currently lives with her boyfriend at his mother’s house.</p>
+    <p>Money is tight.</p>
+    <p>Yet two months ago, she bought her first health insurance plan on the exchange.</p>
+    <p>“I’m getting older,” Trejo said. “Sometimes things happen, and you need it.”</p>
+    <p>Trejo never had health insurance growing up. Her parents were poor. All doctor visits were paid out-of-pocket, so at an early age, the first-generation Mexican-American learned that if she had an ailment, it was best to just “ride it out.”</p>
+
+    <!-- video here -->
+
+    <p>Trejo was 20 when she first received health insurance. It was through her job, but even with the coverage, she hardly used it.</p>
+    <p>That changed last year.</p>
+    <p>Trejo was living and working in Oregon and had insurance through the bakery she worked for. She hurt her foot, and instead of riding it out, she went to the doctor, got X-rays and paid roughly $30 for the appointment.</p>
+    <p>“That was the first time in my life I was like, ‘OK, this is how it feels to be taken care of by someone other than your parents,’” she said.</p>
+
+    <p>Trejo moved back to her hometown of Dallas in November. Soon after, she began working at Small Brewpub in Oak Cliff as a part-time pastry chef. As she started her new company, La Casita Bakeshop, she decided that buying health insurance would be the responsible thing to do.</p>
+    <p>She searched the marketplace and found a plan through Blue Cross Blue Shield of Texas. Due to her low income, she received a $204 monthly subsidy. In total, she pays $155 monthly premiums with no deductible.</p>
+    <p>Trejo knows it’s a great deal. She couldn’t afford the plan without the subsidy but doesn’t anticipate using it much.</p>
+
+    {%include "adblock1.html" %}
+    <div class="inline-block image-block">
+      {{img.jpg('trejo-inline', 'Pastry chef Maricsa Trejo inside the kitchen at Small Brewpub', sizes='(min-width: 900px) 55%, 95vw' )}}
+      <p class="cutline">Pastry chef Maricsa Trejo is healthy, and even with her low income, she’s decided to purchase insurance through the Affordable Care Act. By buying in, she hopes to help others. (Jae S. Lee/Staff Photographer)  </p>
+    </div>
+
+    <div id="solicitation" class="inline-block">
+      <h6>Tell us your story</h6>
+      <p>Reporters from <em>The Dallas Morning News</em> want to learn how the Trump administration’s plan to repeal and replace the Affordable Care Act affects Texans. <a href="https://docs.google.com/forms/d/e/1FAIpQLSelaLCa4rreSjRXYYsCabeAcPOTMzFhSrykX_Z_GWD5YRRROw/viewform" target="_blank">We need your help.</a></p>
+    </div>
+
+    <p>Instead, she hopes that by buying in, she can help others.</p>
+    <p>“That’s why I think health care is so important,” Trejo said. “I know I can’t do anything to help pay for somebody’s health care because I don’t have the money, but I know if I pay into it, that’s like helping other people.”</p>
+    <p>Trejo did not vote in the past election. She was traveling outside of the country and never made the time, but she says she did not like either candidate.</p>
+    <p>Instead, she preferred Vermont Sen. Bernie Sanders. Among other things, she was attracted to his platform on universal health care.</p>
+    <p>Trejo is concerned about a repeal and replace. Now that she’s gone through the process of acquiring her own insurance, she wants to help her parents find their first health care plan and hopes that option remains available. Her father, who’s had multiple emergency room visits in the last five years, is still paying off medical bills.</p>
+    <p>But she knows the ACA isn’t perfect — as evidenced by how affordable it was for her to find such a good plan.</p>
+    <p>“It just doesn’t make any sense for someone like me to get something so good and then someone who can’t really afford it, but who needs it, not get that benefit [of a subsidy] at all,” Trejo said. “It just doesn’t make any sense.”</p>
+
+    <p class="twitter-tag">Follow writer name on Twitter at <a href="https://twitter.com/brendan_meyer13" target="_blank">@Brendan_Meyer13</a>.</p>
+
+    {% include "adblock2.html" %}
+
+    <div id="next-story" class="clearfix">
+      <img src="images/_hunter-share.jpg" alt="LaRonda Hunter" />
+      <div class="next__content">
+        <h6>Up Next: LaRonda Hunter</h6>
+        <h5>Franchise owner says mandate to provide insurance for workers holds her back</h5>
+        <p>LaRonda Hunter’s hair salon business has stalled, but not for a lack of customers. Instead, an Affordable Care Act mandate makes providing health insurance for more employees unaffordable. <a href="laronda-hunter.html">Read LaRonda’s story.</a></p>
+      </div>
+    </div>
+
+    <div id="related-stream">
+      <h4>Related stories</h4>
+    </div>
+
+    {% include "_story-drawer.html" %}
+
+
+    <section class="credits clearfix">
+      <p>Author: <a href="mailto:bmeyer@dallasnews.com">Brendan Meyer</a></p>
+      <p>Editor: <a href="mailto:agarrett@dallasnews.com">Arnessa Garrett</a></p>
+      <p>Copy Editor: <a href="mailto:astewart@dallasnews.com">Allison Stewart</a></p>
+      <p>Photos and video: <a href="mailto:jlee@dallasnews.com">Jae S. Lee</a></p>
+      <p>Designer: <a href="mailto:jhancock@dallasnews.com">John Hancock</a></p>
+    </section>
+	   <!-- end credits -->
+
+
+    <div class="shareComments">
+      <div id="comments"></div>
+  	</div>
+  	<!-- end shareComments -->
+
+
+</section>
+<!-- end contentWell -->
+
+{%endblock%}
+
+{%block custom_foot%}
+	<script type="text/javascript" src="js/individual.js"></script>
+{%endblock%}
+
+
+
+
+
+{%block custom_social_meta%}
+<script type="text/javascript">
+  var storyTitle = "{{tweetText}}", // headline in tweet card
+	storyURL = "https://interactives.dallasnews.com/2017/health-complex/individual.html",
+	leadText = "{{shareText}}", //description in tweet card
+	storyIMG = "https://interactives.dallasnews.com/2017/health-complex/images/_ind-share.jpg",
+	storyAuthor = "{{authors}}",
+	twitterTag = "DMNBiz",
+	comments = true,
+	share = true;
+	OAS_sitepage = 'www.dallasnews.com/business/health-care/';
+</script>
+{%endblock%}
