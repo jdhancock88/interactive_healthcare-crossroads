@@ -218,6 +218,12 @@ INTRO NAV CIRCLES
   top: 0;
 }
 
+@media (max-width: 600px) {
+  #intro__nav {
+    bottom: 50px;
+  }
+}
+
 
 /*
 -------------------------------
@@ -332,6 +338,9 @@ GRID
 #cutcher {
   background-image: url('../images/_cutcher-intro.jpg');
 }
+#your-story {
+  background-image: url('../images/_flag-intro.jpg')
+}
 
 @supports (display: grid) {
   .cast__item {
@@ -352,11 +361,14 @@ GRID
     width: 100%;
     background-size: 125%;
     background-position: right -30px;
+    &:hover {
+      transform: translate3d(0vw, 0, 0) scale(1.10);
+    }
   }
   .cast__content {
     top: 20%;
     position: absolute;
-    right: 15px;
+    right: 30px;
     text-align: right;
     width: 40%;
     min-width: 170px;
@@ -522,12 +534,11 @@ GRID
   background-color: $black66;
   height: 10px;
   display: block;
-  border-radius: 10px;
   margin-bottom: 3px;
   position: relative;
 }
 .lean__bar {
-  background-color: white;
+  background-color: $dmnblue;
   position: absolute;
   width: 50%;
   display: block;
@@ -541,53 +552,35 @@ GRID
 .lean--right {
   float: right;
 }
-.lean--left-bar {
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-}
-.lean--right-bar {
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-}
-.lean--left1 {
+.lean--1 {
   width: 10%;
-  left: 40%;
 }
-.lean--left2 {
+.lean--2 {
   width: 20%;
-  left: 30%;
 }
-.lean--left3 {
+.lean--3 {
   width: 30%;
-  left: 20%;
 }
-.lean--left4 {
+.lean--4 {
   width: 40%;
-  left: 10%;
 }
-.lean--left5 {
+.lean--5 {
   width: 50%;
-  left: 0%;
 }
-.lean--right1 {
-  width: 10%;
-  left: 50%;
+.lean--6 {
+  width: 60%;
 }
-.lean--right2 {
-  width: 20%;
-  left: 50%;
+.lean--7 {
+  width: 70%;
 }
-.lean--right3 {
-  width: 30%;
-  left: 50%;
+.lean--8 {
+  width: 80%;
 }
-.lean--right4 {
-  width: 40%;
-  left: 50%;
+.lean--9 {
+  width: 90%;
 }
-.lean--right5 {
-  width: 50%;
-  left: 50%;
+.lean--10 {
+  width: 100%;
 }
 
 @media (max-width: 900px) {
@@ -654,6 +647,93 @@ GRID
 @media (max-width: 900px) {
   .individual-well p, .individual__story-head, .individual__byline-block, #related-stream {
     max-width: none;
+  }
+}
+
+////////////////////////////////////////////////////////////////////////////////
+///// SOLICITATION BOX
+///////////////////////////////////////////////////////////////////////////////
+
+#solicitation {
+  padding: 1.2rem 0;
+  border-bottom: 1px solid white;
+  color: white;
+  font-family: $sans;
+  h6 {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  p {
+    max-width: none;
+  }
+  a {
+    color: white;
+    border-bottom: 1px solid $dmnblue;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+////////////////////////////////////////////////////////////////////////////////
+///// NEXT STORY
+///////////////////////////////////////////////////////////////////////////////
+
+#next-story {
+  max-width: 55%;
+  padding-bottom: 1.2rem;
+  border-bottom: 1px solid $black50;
+  img {
+    float: left;
+    width: 200px;
+  }
+}
+
+.next__content {
+  width: calc(100% - 215px);
+  float: right;
+  color: white;
+  font-family: $sans;
+  h5, h6  {
+    font-weight: bold;
+  }
+  p {
+    width: 100%;
+    max-width: none;
+    @include type(1.4rem, 1.8rem, 0);
+  }
+  a {
+    color: white;
+    border-bottom: 1px solid $dmnblue;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  #next-story {
+    max-width: 100%;
+    img {
+      width: 200px;
+    }
+  }
+  .next__content {
+    width: calc(100% - 215px);
+  }
+}
+
+@media (max-width: 500px) {
+  #next-story {
+    img {
+      width: 100%;
+      float: none;
+      margin-bottom: .6rem;
+    }
+  }
+  .next__content {
+    width: 100%;
+    float: none;
   }
 }
 

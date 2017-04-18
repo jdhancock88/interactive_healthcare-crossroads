@@ -14,6 +14,7 @@ CHANGING SLIDES
 function removeIntro() {
   $('#intro').fadeOut(1000);
   clearInterval(advanceTimer);
+  $('body').removeClass('no--scroll');
 }
 
 // clicking the intro_skip button
@@ -71,14 +72,27 @@ const advanceTimer = setInterval(() => { advanceSlide(); }, 7100);
 // advancing or rewinding based on which arrow is clicked, if advanced, the auto
 // advancing timer is cleared
 $('#arrow__right').click(() => {
-  advanceSlide();
   clearInterval(advanceTimer);
+  advanceSlide();
 });
 $('#arrow__left').click(() => {
-  rewindSlide();
   clearInterval(advanceTimer);
+  rewindSlide();
 });
 
+function swipeAdvance() {
+  console.log('test');
+  advanceSlide();
+  clearInterval(advanceTimer);
+}
+
+function swipeRewind() {
+  rewindSlide();
+  clearInterval(advanceTimer);
+}
+
+$('#intro').on('swipeleft', swipeAdvance);
+$('#intro').on('swiperight', swipeRewind);
 
 /*
 --------------------------------------

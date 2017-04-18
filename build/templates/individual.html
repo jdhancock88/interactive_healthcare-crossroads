@@ -3,7 +3,7 @@
 
 
 {%block custom_meta%}
-<meta content="{{keywords|join(',')}}" name="keywords" />
+<meta content="health care,health care reform,affordable care act,interactives,dallas,dallas news,dfw news,dallas newspaper,dallas morning news,dallas morning news newspaper" name="keywords" />
 
 <meta charset="UTF-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -11,26 +11,26 @@
 
 <meta content="{{shareText}}" name="description" />
 <title>{{pageTitle}}</title>
-<meta property="og:url" content="{{url}}" />
+<meta property="og:url" content="https://interactives.dallasnews.com/2017/health-complex/individual.html" />
 <meta property="og:title" content="{{shareTitle}}"/>
 <meta property="og:description" content="{{shareText}}" name="description"/>
-<meta property="og:image" content="{{imgURL}}"/>
-<meta property="og:image:height" content="{{imgHeight}}"/>
-<meta property="og:image:width" content="{{imgWidth}}"/>
+<meta property="og:image" content="https://interactives.dallasnews.com/2017/health-complex/images/_ind-share.jpg"/>
+<meta property="og:image:height" content="630"/>
+<meta property="og:image:width" content="1200"/>
 <meta property="og:type" content="article" />
 <meta property="article:author" content="{{authorFBProfile}}" />
 <meta property="article:publisher" content="//www.facebook.com/dallasmorningnews/" />
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@{{sectionTwitter}}" />
+<meta name="twitter:site" content="@DMNBiz" />
 <meta name="twitter:creator" content="@{{authorTwitter}}" />
 
 <meta name="liveFyreID" content="{{id}}" />
 
-<meta name="parsely-page" id='parsely-page' content='{"title": "{{shareTitle}}", "link": "{{url}}", "image_url": "{{imgURL}}", "type": "post", "post_id": "{{id}}", "pub_date": "{{publishDate}}", "section": "{{section}}", "author": ["{{authors}}"], "tags": ["{{keywords|join('","')|safe}}"]}' />
+<meta name="parsely-page" id='parsely-page' content='{"title": "{{shareTitle}}", "link": "https://interactives.dallasnews.com/2017/health-complex/individual.html", "image_url": "https://interactives.dallasnews.com/2017/health-complex/images/_ind-share.jpg", "type": "post", "post_id": "{{id}}", "pub_date": "2017-04-20T12:00:00Z", "section": "health-care", "author": ["{{authors}}"], "tags": ["health care","health care reform","affordable care act","interactives","dallas","dallas news","dfw news","dallas newspaper","dallas morning news","dallas morning news newspaper"]}' />
 
-<meta property="og:keywords" content="{{keywords|join(',')}}"/>
+<meta property="og:keywords" content="health care,health care reform,affordable care act,interactives,dallas,dallas news,dfw news,dallas newspaper,dallas morning news,dallas morning news newspaper"/>
 
-<meta name="news_keywords" content="{{keywords|join(',')}}"/>
+<meta name="news_keywords" content="health care,health care reform,affordable care act,interactives,dallas,dallas news,dfw news,dallas newspaper,dallas morning news,dallas morning news newspaper"/>
 {%endblock%}
 
 
@@ -101,7 +101,7 @@ googletag.enableServices();
 {% include "_hc-nav.html" %}
 
   <div class="hc__hero clearfix">
-    <{{img.jpg('orlie2', 'Michael Orlie')}}
+    {{img.jpg('orlie2', 'Michael Orlie')}}
   </div>
 
   <section id="hc-header" class="clearfix">
@@ -112,7 +112,7 @@ googletag.enableServices();
         <p><strong>Lives: </strong>Frisco, Texas</p>
         <p><strong>Family: </strong>Married, three children</p>
         <div id="political-lean" class="clearfix">
-          <p><strong>Political leaning</strong></p>
+          <p><strong>Where he/she stands politically:</strong></p>
           <span class="lean__container">
             <span class="lean__bar lean--right-bar lean--right4"></span>
           </span>
@@ -121,8 +121,8 @@ googletag.enableServices();
         </div>
       </div>
       <div class="ch__blurb">
-        <p><strong>Healthcare needs: </strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc volutpat velit sit amet ipsum congue, nec tempus urna venenatis.</p>
-        <p><strong>For her, health care means: </strong>BLorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc volutpat velit sit amet ipsum congue, nec tempus urna venenatis.</p>
+        <p><strong>Health coverage needs: </strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc volutpat velit sit amet ipsum congue, nec tempus urna venenatis.</p>
+        <p><strong>For her, health care is: </strong>BLorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc volutpat velit sit amet ipsum congue, nec tempus urna venenatis.</p>
         <p><strong>What she had before the ACA: </strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc volutpat velit sit amet ipsum congue, nec tempus urna venenatis.</p>
         <p><strong>What she has now: </strong>ILorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc volutpat velit sit amet ipsum congue, nec tempus urna venenatis.</p>
       </div>
@@ -158,11 +158,33 @@ googletag.enableServices();
 
     <p>horse-race coverage copyboy the power of the press belongs to the person who owns one data visualization tweet Jeff Jarvis Patch Like button explainer, TechCrunch should isn't a business model copyright Romenesko WordPress Arianna Kindle Single Pictures of Goats section got drudged, gamification put the paper to bed the other longer Book Review The Work of Art in the Age of Mechanical Reproduction open newsroom Foursquare A.J. Liebling.</p>
 
+    {%include "adblock1.html" %}
+    <div class="inline-block image-block">
+      <!-- {{img.jpg('image name', 'alt-text.', sizes='(min-width: 900px) 55%, 95vw' )}} -->
+      <p class="cutline">Cutline (Jae S. Lee/Staff Photographer)  </p>
+    </div>
+
+    <div id="solicitation" class="inline-block">
+      <h6>Tell us your story</h6>
+      <p>Reporters from The Dallas Morning News want to learn how the Trump administration's plan to repeal and replace the Affordable Care Act affects Texans. <a href="https://docs.google.com/forms/d/e/1FAIpQLSelaLCa4rreSjRXYYsCabeAcPOTMzFhSrykX_Z_GWD5YRRROw/viewform" target="_blank">We need your help.</a></p>
+    </div>
+
     <p>Instagram Quora linkbait people formerly known as the audience bringing a tote bag to a knife fight YouTube RT syndicated the power of the press belongs to the person who owns one, Alberto Ibarguen The Work of Art in the Age of Mechanical Reproduction open newsroom The Weekender the medium is the message Dan Fleckner analog thinking future of context Instagram, David Foster Wallace reporting gutter Aron Pilhofer serendipity This Week in Review he said she said.</p>
 
     <p>horse-race coverage copyboy the power of the press belongs to the person who owns one data visualization tweet Jeff Jarvis Patch Like button explainer, TechCrunch should isn't a business model copyright Romenesko WordPress Arianna Kindle Single Pictures of Goats section got drudged, gamification put the paper to bed the other longer Book Review The Work of Art in the Age of Mechanical Reproduction open newsroom Foursquare A.J. Liebling.</p>
 
     <p>Instagram Quora linkbait people formerly known as the audience bringing a tote bag to a knife fight YouTube RT syndicated the power of the press belongs to the person who owns one, Alberto Ibarguen The Work of Art in the Age of Mechanical Reproduction open newsroom The Weekender the medium is the message Dan Fleckner analog thinking future of context Instagram, David Foster Wallace reporting gutter Aron Pilhofer serendipity This Week in Review he said she said.</p>
+
+    <p class="twitter-tag">Follow writer name on Twitter at <a href="urlhere">@twittertag.</a></p>
+
+    <div id="next-story" class="clearfix">
+      <img src="images/_defaultImage.jpg" alt="Next id" />
+      <div class="next__content">
+        <h6>Up Next: XXXXX XXXXX</h6>
+        <h5>Headline goes in this spot here and is this long</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eleifend mattis justo, ac blandit nisl mattis et. <a href="#">Read XXXXXX XXXXX's story.</a></p>
+      </div>
+    </div>
 
     <div id="related-stream">
       <h4>Related stories</h4>
@@ -170,44 +192,22 @@ googletag.enableServices();
 
     {% include "_story-drawer.html" %}
 
-    <p class="twitter-tag">Follow writer name on Twitter at <a href="urlhere">@twittertag.</a></p>
 
 
     <section class="credits clearfix">
-        <p>Author: <a href="mailto:emailaddress">Name</a></p>
-        <p>Editor: <a href="mailto:emailaddress">Name</a></p>
-        <p>Copy Editor: <a href="mailto:emailaddress">Name</a></p>
-        <p>Photos: <a href="mailto:emailaddress">Name</a></p>
-        <p>Graphics: <a href="mailto:emailaddress">Name</a></p>
-        <p>Designer: <a href="mailto:emailaddress">Name</a></p>
+      <p>Author: <a href="mailto:srice@dallasnews.com">Sabriya Rice</a></p>
+      <p>Editor: <a href="mailto:agarrett@dallasnews.com">Arnessa Garrett</a></p>
+      <p>Copy Editor: <a href="mailto:astewart@dallasnews.com">Allison Stewart</a></p>
+      <p>Photos and video: <a href="mailto:jlee@dallasnews.com">Jae S. Lee</a></p>
+      <p>Designer: <a href="mailto:jhancock@dallasnews.com">John Hancock</a></p>
     </section>
-	<!-- end credits -->
-
-	<section class="more clearfix">
-		<h5>Read more from The Dallas Morning News</h5>
-		<a class="clearfix" href="#">
-			<img src="images/_defaultImage.jpg" alt="#" />
-			<h6>Story title goes here</h6>
-			<p>Description of the story goes in this spot here</p>
-		</a>
-		<a class="clearfix" href="#">
-			<img src="images/_defaultImage.jpg" alt="#" />
-			<h6>Story title goes here</h6>
-			<p>Description of the story goes in this spot here</p>
-		</a>
-		<a class="clearfix" href="#">
-			<img src="images/_defaultImage.jpg" alt="#" />
-			<h6>Story title goes here</h6>
-			<p>Description of the story goes in this spot here</p>
-		</a>
-	</section>
-	<!-- end more -->
+	   <!-- end credits -->
 
 
     <div class="shareComments">
-        <div id="comments"></div>
-	</div>
-	<!-- end shareComments -->
+      <div id="comments"></div>
+  	</div>
+  	<!-- end shareComments -->
 
 
 </section>
@@ -226,13 +226,13 @@ googletag.enableServices();
 {%block custom_social_meta%}
 <script type="text/javascript">
   var storyTitle = "{{tweetText}}", // headline in tweet card
-	storyURL = "{{url}}",
+	storyURL = "https://interactives.dallasnews.com/2017/health-complex/individual.html",
 	leadText = "{{shareText}}", //description in tweet card
-	storyIMG = "{{imgURL}}",
+	storyIMG = "https://interactives.dallasnews.com/2017/health-complex/images/_ind-share.jpg",
 	storyAuthor = "{{authors}}",
-	twitterTag = "{{sectionTwitter}}",
+	twitterTag = "DMNBiz",
 	comments = true,
 	share = true;
-	OAS_sitepage = 'www.dallasnews.com/{{desk}}/{{section}}/';
+	OAS_sitepage = 'www.dallasnews.com/business/health-care/';
 </script>
 {%endblock%}

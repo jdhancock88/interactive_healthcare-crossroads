@@ -65,6 +65,11 @@ function formatStream(data) {
       $('#related-stream').append(`<p><a href='${v.linkurl}'>${v.linktext}</a></p>`);
     }
   });
+
+  // if there's nothing to add to the related stream, remove the related stream div
+  if ($('#related-stream p').length === 0) {
+    $('#related-stream').remove();
+  }
 }
 
 $.ajax({
