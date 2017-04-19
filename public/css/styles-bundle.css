@@ -1487,12 +1487,17 @@ GRID
   font-weight: bold;
   margin-bottom: 2.4rem; }
 
-.about__intro {
+.about__intro, .latest__placeholder {
   color: white;
   font-family: "Gotham A", "Gotham B", Arial, sans-serif;
   font-size: 1.6rem;
   line-height: 2.4rem;
   margin-bottom: 0; }
+  .about__intro a, .latest__placeholder a {
+    color: white;
+    border-bottom: 1px solid #0185d3; }
+    .about__intro a:hover, .latest__placeholder a:hover {
+      text-decoration: none; }
 
 .hc__update {
   font-family: "Gotham A", "Gotham B", Arial, sans-serif;

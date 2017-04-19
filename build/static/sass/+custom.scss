@@ -757,6 +757,7 @@ GRID
   }
 }
 
+
 #latest, #about {
   h4 {
     color: white;
@@ -767,10 +768,17 @@ GRID
   }
 }
 
-.about__intro {
+.about__intro, .latest__placeholder {
   color: white;
   font-family: $sans;
   @include type(1.6rem, 2.4rem, 0);
+  a {
+    color: white;
+    border-bottom: 1px solid $dmnblue;
+    &:hover {
+      text-decoration: none;
+    }
+  }
 }
 
 .hc__update {

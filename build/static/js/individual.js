@@ -25,6 +25,10 @@ function buildLatest(stream) {
     }
   });
 
+  if (stream.length !== 0) {
+    $('.latest__placeholder').remove();
+  }
+
   $.each(stream, (k, v) => {
     const latest = latestTemplate(v);
     $('#latest').append(latest);
