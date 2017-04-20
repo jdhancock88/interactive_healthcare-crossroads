@@ -210,6 +210,8 @@ V. CONTENT WELL
   .content-well > p.twitter-tag {
     font-style: italic;
     margin-top: 4.8rem; }
+    .content-well > p.twitter-tag a:visited {
+      color: #0185d3; }
 
 .content-well > p:last-of-type {
   margin-bottom: 0; }
@@ -895,7 +897,7 @@ INTRO
     animation-fill-mode: forwards; }
   #intro h2, #intro h4 {
     color: white;
-    font-family: "Open Sans", "Gotham A", "Gotham B", Arial, sans-serif;
+    font-family: "Gotham A", "Gotham B", Arial, sans-serif;
     opacity: 0;
     -webkit-animation-name: brandFade;
     -webkit-animation-duration: 2s;
@@ -908,7 +910,11 @@ INTRO
     text-transform: uppercase; }
   #intro h2 {
     font-weight: bold;
-    margin-bottom: 0; }
+    margin-bottom: 1.2rem;
+    line-height: 4.8rem; }
+  #intro h4 {
+    font-size: 2rem;
+    line-height: 2.4rem; }
 
 #intro__content {
   top: calc(40vh - 52px);
@@ -1189,9 +1195,9 @@ GRID
   position: relative;
   margin-bottom: 2.4rem;
   margin-top: 4.8rem;
-  font-family: "Open Sans", "Gotham A", "Gotham B", Arial, sans-serif;
+  font-family: "Gotham A", "Gotham B", Arial, sans-serif;
   padding-bottom: 2px;
-  max-width: 400px; }
+  max-width: 450px; }
   #hc-nav ul {
     border-top: 3px solid white;
     padding-top: 10px; }
@@ -1237,9 +1243,10 @@ GRID
     margin-bottom: 0.3rem; }
   #hc__branding h6 {
     color: white;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-family: "Gotham A", "Gotham B", Arial, sans-serif; }
 
-@media (max-width: 450px) {
+@media (max-width: 500px) {
   #hc-nav img {
     width: 40px;
     height: 27px;
@@ -1567,6 +1574,9 @@ GRID
       margin-bottom: 5px; }
       .update__image-group p {
         float: none; } }
+
+.fyre * {
+  color: white !important; }
 
 #story-panel {
   width: 75%;

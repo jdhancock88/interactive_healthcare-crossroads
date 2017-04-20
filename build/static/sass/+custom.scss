@@ -11,7 +11,7 @@
 @import 'mixins';
 
 
-$custom: 'Open Sans', 'Gotham A', 'Gotham B', Arial, sans-serif;
+$custom:'Gotham A', 'Gotham B', Arial, sans-serif;
 $bg: #212225;
 
 body {
@@ -76,7 +76,12 @@ INTRO
   }
   h2 {
     font-weight: bold;
-    margin-bottom: 0;
+    margin-bottom: 1.2rem;
+    line-height: 4.8rem;
+  }
+  h4 {
+    font-size: 2rem;
+    line-height: 2.4rem;
   }
 }
 
@@ -395,7 +400,7 @@ GRID
   margin-top: 4.8rem;
   font-family: $custom;
   padding-bottom: 2px;
-  max-width: 400px;
+  max-width: 450px;
   ul {
     border-top: 3px solid white;
     padding-top: 10px;
@@ -443,10 +448,11 @@ GRID
   h6  {
     color: white;
     text-transform: uppercase;
+    font-family: $sans;
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 500px) {
   #hc-nav {
     img {
       width: 40px;
@@ -853,6 +859,9 @@ GRID
       float: none;
     }
   }
+}
+.fyre * {
+    color: white !important;
 }
 
 @import '_story_drawer';

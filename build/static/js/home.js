@@ -81,7 +81,6 @@ $('#arrow__left').click(() => {
 });
 
 function swipeAdvance() {
-  console.log('test');
   advanceSlide();
   clearInterval(advanceTimer);
 }

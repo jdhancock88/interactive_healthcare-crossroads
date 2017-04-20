@@ -219,6 +219,11 @@ V. CONTENT WELL
   &.twitter-tag {
       font-style: italic;
       margin-top: 4.8rem;
+      a {
+        &:visited {
+          color: $dmnblue;
+        }
+      }
   }
 }
 .content-well > p:last-of-type {
