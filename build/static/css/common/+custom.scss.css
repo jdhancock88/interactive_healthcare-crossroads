@@ -1,13 +1,15 @@
 body {
   background-color: #212225; }
   body.no-pad {
-    padding-bottom: 0; }
+    padding-bottom: 0 !important; }
 
 .noshow {
   display: none; }
 
 .no--scroll {
-  overflow: hidden; }
+  overflow: hidden !important;
+  height: 50vh !important;
+  min-height: 1px !important; }
 
 /*
 -------------------------------

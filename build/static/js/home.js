@@ -12,6 +12,7 @@ CHANGING SLIDES
 
 // removing the intro overlay if the skip intro button is clicked
 function removeIntro() {
+  $('#cast-grid').removeClass('noshow');
   $('#intro').fadeOut(1000);
   clearInterval(advanceTimer);
   $('body').removeClass('no--scroll');

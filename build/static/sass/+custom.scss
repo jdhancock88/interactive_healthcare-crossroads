@@ -17,7 +17,7 @@ $bg: #212225;
 body {
   background-color: $bg;
   &.no-pad {
-    padding-bottom: 0;
+    padding-bottom: 0 !important;
   }
 }
 
@@ -26,7 +26,9 @@ body {
 }
 
 .no--scroll {
-  overflow: hidden;
+  overflow: hidden !important;
+  height: 50vh !important;
+  min-height: 1px !important;
 }
 
 ////////////////////////////////////////////////////////////////////////////////
