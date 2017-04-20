@@ -28,6 +28,8 @@ function updateSlide() {
   // remove our click handlers so we don't gum up the works by advancing mid animation
   $('#arrow__right').off('click');
   $('#arrow__left').off('click');
+  $('#intro').off('swipeleft', swipeAdvance);
+  $('#intro').off('swiperight', swipeRewind);
 
   // fade out current slide and fade in next/previous slide based on direction
   $('.intro__slide').fadeOut(1000);
@@ -41,9 +43,17 @@ function updateSlide() {
 
     // advancing or rewinding based on which arrow is clicked
     $('#arrow__right').click(() => {
+      clearInterval(advanceTimer);
       advanceSlide();
     });
-    $('#arrow__left').on('click', rewindSlide);
+    $('#arrow__').click(() => {
+      clearInterval(advanceTimer);
+      rewindSlide();
+    });
+
+    $('#intro').on('swipeleft', swipeAdvance);
+    $('#intro').on('swiperight', swipeRewind);
+
   }, 1100);
 }
 
@@ -68,7 +78,7 @@ function rewindSlide() {
 
 // our timer that will auto advance the slider every 7.1 seconds
 // (2.1 seconds for animation, 5 seconds for read time)
-const advanceTimer = setInterval(() => { advanceSlide(); }, 7100);
+const advanceTimer = setInterval(() => { advanceSlide(); console.log('test'); }, 7100);
 
 // advancing or rewinding based on which arrow is clicked, if advanced, the auto
 // advancing timer is cleared
