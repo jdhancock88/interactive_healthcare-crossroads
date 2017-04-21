@@ -7,9 +7,7 @@ body {
   display: none; }
 
 .no--scroll {
-  overflow: hidden !important;
-  height: 50vh !important;
-  min-height: 1px !important; }
+  overflow: hidden !important; }
 
 /*
 -------------------------------
