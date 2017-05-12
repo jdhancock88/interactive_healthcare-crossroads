@@ -46,7 +46,7 @@ function updateSlide() {
       clearInterval(advanceTimer);
       advanceSlide();
     });
-    $('#arrow__').click(() => {
+    $('#arrow__left').click(() => {
       clearInterval(advanceTimer);
       rewindSlide();
     });
